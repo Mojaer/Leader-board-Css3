@@ -23,6 +23,7 @@ hr {
     width: 876px;
     padding: 30px 80px 40px 30px;
     margin-bottom: 24px;
+    margin-left: 28px;
 }
 
 .top-players {
@@ -101,7 +102,7 @@ hr {
 
 .course {
     border-radius: 8px;
-    padding: 8px;
+
 }
 
 .course:hover {
@@ -135,3 +136,46 @@ hr {
     border-radius: 14.6913px;
     padding: 5px;
 }
+
+/* -----------------------Media Queries for ---------------------------------------------
+
+----------------------------Mobile devices----------------------------- */
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        text-align: center;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .course {
+        margin-top: 10px;
+    }
+
+    .course-info {
+        margin-top: -3px;
+    }
+
+
+
+    .section-tittle {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 688px) {}
